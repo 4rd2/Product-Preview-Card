@@ -1,0 +1,63 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts\Montserrat\static\Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+/*General card container*/
+.container {
+    width: 310px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+}
+
+.subcontainer {
+    padding: 0px 20px 20px 20px;
+}
+/*Image*/
+.bottleImage {
+    max-width: fit-content;
+    width: 310px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+/*All the text*/
+.subHeader {
+    font-family: Courier;
+}
+
+
+
+.text {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Cambria;
+    color: hsl(228, 12%, 48%);
+}
+/*Button*/
+.cart {
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    color:hsl(0, 0%, 100%);
+    gap: 10px;
+    font-weight: 700;
+}

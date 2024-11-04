@@ -3,19 +3,22 @@
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('fonts\Montserrat\static\Montserrat-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+    src: url('fonts/Montserrat/static/Montserrat-Regular.ttf') format('truetype');
   }
+@font-face {
+    font-family: 'Fraunces';
+    src: url('fonts/Fraunces/Fraunces_72pt-Regular.ttf') format('truetype');
+}
 
 body {
     background-color: hsl(30, 38%, 92%);
     display: flex;
     flex-direction: column;
+    height: 100vh;
     justify-content: center;
     align-items: center;
-    font-family: 'Montserrat';
     font-weight: 700;
+    font-family: 'Fraunces';
 }
 /*General card container*/
 .container {
@@ -35,18 +38,50 @@ body {
     border-top-right-radius: 10px;
 }
 /*All the text*/
+.header {
+    display: flex;
+    flex-direction: column;
+}
 .subHeader {
-    font-family: Courier;
+    font-family: 'Montserrat';
+    margin-bottom: 10px;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 2px;
 }
 
-
+.mainHeader {
+    margin: 0px 0;
+    font-size: xx-large;
+    font-weight: 700;
+    line-height: 100%    
+}
 
 .text {
     font-size: 14px;
     font-weight: 500;
-    font-family: Cambria;
+    font-family: 'Montserrat';
     color: hsl(228, 12%, 48%);
+    line-height: 150%;
 }
+.prices {
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.currentPrice {
+    font-size: xx-large;
+    color:hsl(158, 36%, 37%);
+    padding-right: 20px;
+}
+.previousPrice {
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+    font-size: 14px;
+}
+
 /*Button*/
 .cart {
     background-color: hsl(158, 36%, 37%);
@@ -60,4 +95,8 @@ body {
     color:hsl(0, 0%, 100%);
     gap: 10px;
     font-weight: 700;
+}
+
+.cart:active {
+    background-color: hsl(161, 37%, 15%);
 }
